@@ -70,16 +70,16 @@ Data Quality
 ## Screenshots
 
 ### Dashboard
-![Dashboard](assets/Dashboard.png)
+![Dashboard](Assets/Dashboard.png)
 
 ### Predictive Models
-![Predictive Models](assets/Predictive.png)
+![Predictive Models](Assets/Predictive.png)
 
 ### SQL Analysis
-![SQL](assets/SQL.png)
+![SQL](Assets/SQL.png)
 
 ### Operations Monitor
-![Operations](assets/Operations.png)
+![Operations](Assets/Operations.png)
 
 ---
 ## How to Run
