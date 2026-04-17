@@ -61,6 +61,29 @@ Data Quality
 ### Dashboard
 ![Dashboard](Assets/Dashboard.png)
 
+## Model Results
+
+The dashboard includes two machine learning models to analyze order-level performance:
+
+Loss Risk Model (Classification)
+- Accuracy: 92.8%
+- Precision: 76.3%
+- Recall: 89.6%
+
+The model performs well at identifying loss-making orders, with high recall indicating that most risky orders are successfully detected.
+
+Profit Prediction Model (Regression)
+- Mean Absolute Error (MAE): $27
+- R² Score: 0.04
+
+The regression model provides approximate profit estimates. While it captures general patterns, the low R² score indicates that profit prediction is influenced by multiple complex factors.
+
+### Key Observations
+
+- Higher discount levels are strongly associated with increased loss rates.
+- Orders with discounts above 20% show a significant drop in average profit.
+- At very high discount levels (above 40%), average profit becomes negative while loss rate increases sharply.
+- The model can be used to flag risky orders before they are processed, helping reduce losses.
 ### Predictive Models
 ![Predictive Models](Assets/Predictive.png)
 
