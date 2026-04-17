@@ -1,72 +1,61 @@
 # Business Performance Analytics Dashboard
 
-This project is an end-to-end business analytics dashboard built using the Superstore dataset. It combines SQL, data analysis, and machine learning to analyze sales performance, customer behavior, profitability, and operational trends.
+This project analyzes business performance using the Superstore dataset. It focuses on understanding sales, profit, customer behavior, and order-level trends through an interactive dashboard.
 
 ---
 
 ## Overview
 
-This project simulates a real-world analytics workflow. It provides an interactive dashboard where users can explore business data, run SQL queries, analyze customer segments, and use machine learning models to predict risk and profit.
+The goal of this project was to build a practical analytics dashboard that brings together data analysis, SQL, and basic machine learning in one place.
 
-The focus is on building a complete analytics pipeline, from data processing to insights and decision support.
+It allows users to explore business data, filter results, run SQL queries, and test simple predictive models to better understand profit and risk patterns.
 
 ---
 
 ## Key Features
 
-Executive Dashboard
-- KPI tracking (Revenue, Profit, Margin, Orders, Customers)
-- Month-over-month performance comparison
-- Regional and category insights
+Executive Dashboard  
+- Shows key metrics like revenue, profit, margin, orders, and customers  
+- Includes month-over-month comparison  
 
-Sales Performance
-- Sub-category profitability vs discount analysis
-- Product opportunity identification
-- State and regional breakdowns
+Sales Performance  
+- Analyzes category and sub-category performance  
+- Highlights how discounts affect profitability  
 
-Customer Insights
-- Top customer analysis
-- RFM segmentation (Recency, Frequency, Monetary)
-- High-value customer identification
+Customer Insights  
+- Identifies top customers  
+- Uses simple RFM segmentation to group customers  
 
-Forecasting and Strategy
-- Sales and profit forecasting
-- Discount scenario simulation
-- Business planning insights
+Forecasting and Strategy  
+- Displays sales and profit trends  
+- Includes a basic discount scenario tool  
 
-Predictive Models
-- Loss risk classification model
-- Profit prediction model
-- Feature importance analysis
-- Interactive prediction tool
+Predictive Models  
+- Estimates whether an order may result in a loss  
+- Predicts expected profit based on input values  
 
-SQL Analysis
-- SQLite-based data storage
-- Custom SQL query execution
-- Predefined business queries
+SQL Analysis  
+- Allows running SQL queries on the dataset  
+- Includes a few predefined queries for quick analysis  
 
-Operations Monitor
-- Recent order tracking
-- Risk detection for loss-making orders
-- Operational metrics
+Operations Monitor  
+- Shows recent orders  
+- Flags potentially risky orders  
 
-Data Quality
-- Data validation checks
-- Business recommendations
-- Export filtered dataset
+Data Quality  
+- Displays basic data checks  
+- Allows exporting filtered data  
 
 ---
 
 ## Tech Stack
 
-- Python
-- Pandas
-- Streamlit
-- Plotly
-- SQLite
-- Scikit-learn
-
----
+- Python  
+- Pandas  
+- Streamlit  
+- Plotly  
+- SQLite  
+- Scikit-learn  
 ## Screenshots
 
 ### Dashboard
