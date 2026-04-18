@@ -108,6 +108,13 @@ This is a baseline regression model. It captures general patterns, but it does n
 ![Operations](Assets/Operations.png)
 
 ---
+## Future Improvements
+
+- Improve regression model performance with feature engineering
+- Add real-time data support
+- Deploy dashboard for live access
+
+---
 ```md
 ## Getting Started
 python -m venv .venv
