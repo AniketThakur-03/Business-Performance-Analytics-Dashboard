@@ -24,27 +24,61 @@ Sales Performance
 
 Customer Insights  
 - Identifies top customers  
-- Uses simple RFM segmentation to group customers  
+- Uses simple RFM segmentation  
 
 Forecasting and Strategy  
 - Displays sales and profit trends  
-- Includes a basic discount scenario tool  
+- Includes a discount scenario tool  
 
 Predictive Models  
-- Estimates whether an order may result in a loss  
-- Predicts expected profit based on input values  
+- Estimates loss risk  
+- Predicts expected profit  
 
 SQL Analysis  
-- Allows running SQL queries on the dataset  
-- Includes a few predefined queries for quick analysis  
+- Run SQL queries on the dataset  
 
 Operations Monitor  
 - Shows recent orders  
-- Flags potentially risky orders  
+- Flags risky orders  
 
 Data Quality  
-- Displays basic data checks  
-- Allows exporting filtered data  
+- Basic validation checks  
+- Export filtered data  
+
+---
+
+## Business Insights
+
+- Higher discounts are strongly linked to lower profitability.  
+- Orders with discounts above 20% show a sharp decline in profit.  
+- Very high discounts (above 40%) often result in negative profit.  
+- A small group of customers contributes a large portion of revenue.  
+- Some categories generate strong sales but weak margins.  
+
+These insights highlight the importance of discount control and product-level strategy.
+
+---
+
+## Model Results
+
+Loss Risk Model (Classification)
+- Accuracy: 92.8%
+- Precision: 76.3%
+- Recall: 89.6%
+
+The model performs well at identifying risky orders. High recall ensures most loss-making orders are captured.
+
+Profit Prediction Model (Regression)
+- Mean Absolute Error (MAE): $27  
+- R² Score: 0.04  
+
+This is a baseline model. It captures general trends but does not fully explain profit variation due to multiple influencing factors.
+
+### Key Observations
+
+- Discount is a major driver of both profit and loss risk.  
+- Higher discount ranges significantly increase loss probability.  
+- The model can help flag risky orders before execution.  
 
 ---
 
@@ -56,34 +90,15 @@ Data Quality
 - Plotly  
 - SQLite  
 - Scikit-learn  
+
+---
+  
 ## Screenshots
 
 ### Dashboard
 ![Dashboard](Assets/Dashboard.png)
 
-## Model Results
 
-The dashboard includes two machine learning models to analyze order-level performance:
-
-Loss Risk Model (Classification)
-- Accuracy: 92.8%
-- Precision: 76.3%
-- Recall: 89.6%
-
-The model performs well at identifying loss-making orders, with high recall indicating that most risky orders are successfully detected.
-
-Profit Prediction Model (Regression)
-- Mean Absolute Error (MAE): $27
-- R² Score: 0.04
-
-The regression model provides approximate profit estimates. While it captures general patterns, the low R² score indicates that profit prediction is influenced by multiple complex factors.
-
-### Key Observations
-
-- Higher discount levels are strongly associated with increased loss rates.
-- Orders with discounts above 20% show a significant drop in average profit.
-- At very high discount levels (above 40%), average profit becomes negative while loss rate increases sharply.
-- The model can be used to flag risky orders before they are processed, helping reduce losses.
 ### Predictive Models
 ![Predictive Models](Assets/Predictive.png)
 
