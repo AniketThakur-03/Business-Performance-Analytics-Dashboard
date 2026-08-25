@@ -147,11 +147,7 @@ def build_standard_outputs(df: pd.DataFrame):
 - Precision for profitable class: {report['0']['precision']:.2%}
 - Precision for loss-making class: {report['1']['precision']:.2%}
 
-## Recommended storyline
-1. Sales grew over time, but profit is uneven across categories and discount levels.
-2. Discount strategy deserves attention because higher discounts reduce average profit.
-3. Loss-making sub-categories should be reviewed for pricing, returns, and fulfillment costs.
-4. The predictive section flags risky orders before they become margin problems.
+
 """
     (DOCS_DIR / "key_insights.md").write_text(insights)
 

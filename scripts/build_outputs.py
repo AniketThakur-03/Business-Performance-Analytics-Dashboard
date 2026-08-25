@@ -117,19 +117,8 @@ def main() -> None:
 - Total profit: {money(df['Profit'].sum())}
 - Profit margin: {df['Profit'].sum() / df['Sales'].sum():.2%}
 
-## What this project now includes
-- interactive Streamlit dashboard with cleaner tabs
-- customer and state level drill-down tables
-- loss-risk classifier for negative-profit orders
-- profit regressor for expected order profit
-- export-ready PNG charts, CSV summaries, and a local SQLite analytics store
 
-## Practical takeaways
-1. Discounting needs closer control because high discounts are linked to weaker average profit.
-2. A few sub-categories drag down profit even when they keep sales moving.
-3. The predictive layer helps explain how a student can move from reporting into entry-level business analytics or junior data science work.
-4. SQL views now support repeatable business queries instead of relying only on notebook logic.
-5. The project is strong enough for screenshots, GitHub, and resume bullet points.
+
 '''
     (DOCS_DIR / 'project_notes.md').write_text(notes, encoding='utf-8')
     print('Outputs refreshed successfully.')
